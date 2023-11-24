@@ -41,10 +41,8 @@ public class Player_Control : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("player1");
         if (other.gameObject.CompareTag(TagHitRock))
         {
-            Debug.Log("player2");
             other.gameObject.SetActive(false);
         }
     }
